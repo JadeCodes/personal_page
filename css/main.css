@@ -1,0 +1,96 @@
+/*full page layout*/
+body
+{
+	background: #000000;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.page-wrap
+{
+	margin: 40px auto 60px;
+    max-width: 600px;
+}
+.temptitle
+{
+	margin: 300px auto 0;
+	text-align: center;
+	max-width: 600px;
+}
+/*full page layout ENDS*/
+
+/*fonts*/
+@font-face {
+	font-family: glober;
+	src: url("glober-thin.otf") format("opentype");
+	color: #DAE5E5;
+}
+@font-face {
+	font-family: ostrich;
+	src: url("ostrich-bold.ttf") format("opentype");
+	color: #DAE5E5;
+}
+/*fonts END*/
+
+/*text style & layout*/
+.mainhead
+{
+	font-size: 111px;
+	font-family: ostrich;
+	margin-bottom: 0;
+	color: #DAE5E5;
+}
+.subhead
+{
+	font-size: 32px;
+	font-family: glober;
+	margin-top: 0;
+	text-align: left;
+	margin-left: 2px;
+	color: #DAE5E5;
+	padding-bottom: 10px;
+}
+.contact
+{
+	font-size: 20px;
+	font-family: glober;
+	color: #DAE5E5;
+	margin-bottom: 0;
+}
+/*text style & layout END*/
+
+/*social media icons*/
+.icons
+{
+	max-width: 200px auto 0;
+	margin: 0;
+}
+.icons p 
+{
+	float: left;
+	text-align: center;
+	list-style-type: none;
+	width: 20%;
+}
+/*social media icons END*/
+
+/*responsive design*/
+@media only screen and (max-width:619px), only screen and (max-device-width:619px) {
+		.temptitle
+		{
+			margin: 250px auto 0;
+		}
+		.mainhead
+		{
+			font-size: 90px;
+		}
+		.subhead
+		{
+			text-align: center;
+			font-size: 27px;
+		}
+		.contact
+		{
+			font-size: 18px;
+		}		
+	}
+/*responsive design ENDS*/
