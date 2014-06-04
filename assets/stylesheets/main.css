@@ -112,8 +112,10 @@ body
 		font-weight: bold;
 	}
 	.icons p {
-		text-align: left;
-		padding-right: 5px;
+		text-align: center;
+		padding-right: 20px;
+		margin-bottom: 0px;
+		margin-top: 10px;
 	} 
 }
 /*responsive design for tablet & mobile ENDS*/
