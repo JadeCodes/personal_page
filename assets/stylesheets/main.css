@@ -10,12 +10,12 @@
     font-style: normal;
 }
 @font-face {
-    font-family: 'globerthin_free';
-    src: url('../fonts/glober-thin-webfont.eot');
-    src: url('../fonts/glober-thin-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/glober-thin-webfont.woff') format('woff'),
-         url('../fonts/glober-thin-webfont.ttf') format('truetype'),
-         url('../fonts/glober-thin-webfont.svg#globerthin_free') format('svg');
+    font-family: 'open_sanslight';
+    src: url('../fonts/opensans-light-webfont.eot');
+    src: url('../fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-light-webfont.woff') format('woff'),
+         url('../fonts/opensans-light-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-light-webfont.svg#open_sanslight') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -25,24 +25,31 @@
 html
 {
 	height: 100%;
+	width: 100%;
 }
 body
 {
-	background: #000000;
+	background: #DAE5E5;
 	margin-left: 10px;
 	margin-right: 10px;
 	height: 100%;
+	width: 100%;
 }
 .page-wrap
 {
     height: 100%;
+    max-width: 600px;
 }
 .center 
 {
   	position: absolute;
   	top: 50%;
   	left: 50%;
-  	transform: translate(-50%, -50%);
+  	transform:translate(-50%, -50%);
+  	-webkit-transform:translate(-50%, -50%);
+  	-moz-transform:translate(-50%, -50%);
+    -ms-transform:translate(-50%, -50%);
+    -o-transform:translate(-50%, -50%);
 }
 /*full page layout ENDS*/
 
@@ -52,23 +59,23 @@ body
 	font-size: 111px;
 	font-family: 'ostrich_sansbold';
 	margin: 0;
-	color: #DAE5E5;
+	color: #476E6E;
 }
 .subhead
 {
-	font-size: 32px;
-	font-family: 'globerthin_free';
+	font-size: 31px;
+	font-family: 'open_sanslight';
 	margin-top: 0;
 	text-align: left;
 	margin-left: 2px;
-	color: #F5F5F5;
+	color: #476E6E;
 	padding-bottom: 10px;
 }
 .contact
 {
-	font-size: 20px;
-	font-family: 'globerthin_free';
-	color: #F5F5F5;
+	font-size: 22px;
+	font-family: 'open_sanslight';
+	color: #476E6E;
 	margin-bottom: 0;
 	text-align: center;
 }
@@ -77,15 +84,31 @@ body
 /*social media icons*/
 .icons
 {
-	max-width: 200px auto 0;
-	margin: 0;
+	max-width: 350px;
+	margin: 25px auto 25px;
 }
-.icons p 
+.social
 {
-	float: left;
-	text-align: center;
-	list-style-type: none;
-	width: 20%;
+	text-align: justify;
+}
+.stretch {
+    width: 100%;
+    display: inline-block;
+}
+ul 
+{
+	padding: 0;
+}
+.social ul li a
+{
+	text-decoration: none;
+	display: inline-block;
+	font-size: 42px;
+	color: #F3FFFF;
+}
+.social ul li a i:hover 
+{
+	color: #476E6E;
 }
 /*social media icons END*/
 
@@ -94,8 +117,11 @@ body
 	.contact {
 		text-align: left;
 	}
-	.icons p {
-		text-align: left;
+	.icons {
+		margin: 0;
+	}
+	.social ul li i {
+		text-align: justify;
 	}
 }
 @media (max-width: 677px) {
@@ -110,13 +136,14 @@ body
 		font-size: 20px;
 		text-align: left;
 		font-weight: bold;
-	}
-	.icons p {
-		text-align: center;
-		padding-right: 20px;
-		margin-bottom: 0px;
-		margin-top: 10px;
 	} 
+	.social ul {
+		text-align: left;
+	}
+	.social ul li i {
+		font-size: 38px;
+		margin-top: 0;
+	}
 }
 /*responsive design for tablet & mobile ENDS*/
 
