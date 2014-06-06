@@ -114,6 +114,9 @@ ul
 
 /*responsive design for tablet & mobile*/
 @media (min-width: 677px) and (max-width: 1197px) {
+	.center {
+		padding-top: 40px;
+	}
 	.contact {
 		text-align: left;
 	}
@@ -125,6 +128,9 @@ ul
 	}
 }
 @media (max-width: 677px) {
+	.text {
+		padding-top: 150px;
+	}
 	.mainhead {
 		font-size: 80px;
 	}
