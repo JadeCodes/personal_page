@@ -30,8 +30,6 @@ html
 body
 {
 	background: #DAE5E5;
-	margin-left: 10px;
-	margin-right: 10px;
 	height: 100%;
 	width: 100%;
 }
@@ -73,6 +71,17 @@ body
 	color: #476E6E;
 	margin-bottom: 0;
 	text-align: center;
+}
+.data-link {
+	font-size: 16px;
+	font-family: 'open_sanslight';
+	color: #476E6E;
+	margin-bottom: 0;
+	text-align: center;
+	bottom: 0;
+}
+a {
+	color: #476E6E;
 }
 /*text style & layout END*/
 
@@ -122,7 +131,38 @@ ul
   -webkit-transform: translateY(5px);
   transform: translateY(5px);
 }
+.skew {
+  display: inline-block;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.skew:hover, .skew:focus, .skew:active {
+  -webkit-transform: skew(-10deg);
+  transform: skew(-10deg);
+}
 /*hover effect END*/
+
+/*analytics page*/
+.insights {
+	padding: 0;
+	margin: 0;
+	height:100%;
+}
+#data-image {
+  display: block;
+  width: 100% \9;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/*analytics page END*/
 
 /*responsive design for tablet & mobile*/
 @media (min-width: 677px) and (max-width: 1197px) {
@@ -179,3 +219,4 @@ ul
 	}
 }
 /*responsive design ENDS*/
+
